@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CalculateTool.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // 链式编程思想练习
+//    [self ChainProgrammingTest];
+    
+    // 函数式编程思想练习
+    [self FunctionalProgrammingTest];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 链式编程思想练习
+- (void)ChainProgrammingTest {
+    
+    CalculateTool * tool = [CalculateTool share];
+    tool.plusNumber(5).plusNumber(3).plusNumber(2);
+    NSLog(@"%@", tool);
 }
 
+#pragma mark - 函数式编程思想练习
+- (void)FunctionalProgrammingTest {
+    CalculateTool * tool = [CalculateTool share];
+    [[[tool calculateResultWithSuccess:^NSInteger(NSInteger result) {
+        
+        result += 20;
+        result -= 5;
+        return result;
+        
+    }] calculateResultWithSuccess:^NSInteger(NSInteger result) {
+        
+        return result -= 10;
+        
+    }] log];
+}
+
+#pragma mark - 响应式编程思想
+// 详见KVO的底层实现原理
 
 @end

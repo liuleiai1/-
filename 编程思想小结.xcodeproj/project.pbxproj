@@ -15,6 +15,7 @@
 		71EBB4AA203BA2EF00481331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EBB4A9203BA2EF00481331 /* main.m */; };
 		71EBB4B4203BA2EF00481331 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EBB4B3203BA2EF00481331 /* ______Tests.m */; };
 		71EBB4BF203BA2EF00481331 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EBB4BE203BA2EF00481331 /* ______UITests.m */; };
+		71EBB4CE203BA32A00481331 /* CalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 71EBB4CD203BA32A00481331 /* CalculateTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		71EBB4BA203BA2EF00481331 /* 编程思想小结UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "编程思想小结UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EBB4BE203BA2EF00481331 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		71EBB4C0203BA2EF00481331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71EBB4CC203BA32900481331 /* CalculateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateTool.h; sourceTree = "<group>"; };
+		71EBB4CD203BA32A00481331 /* CalculateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				71EBB49B203BA2EF00481331 /* AppDelegate.m */,
 				71EBB49D203BA2EF00481331 /* ViewController.h */,
 				71EBB49E203BA2EF00481331 /* ViewController.m */,
+				71EBB4CC203BA32900481331 /* CalculateTool.h */,
+				71EBB4CD203BA32A00481331 /* CalculateTool.m */,
 				71EBB4A0203BA2EF00481331 /* Main.storyboard */,
 				71EBB4A3203BA2EF00481331 /* Assets.xcassets */,
 				71EBB4A5203BA2EF00481331 /* LaunchScreen.storyboard */,
@@ -267,6 +272,7 @@
 			files = (
 				71EBB49F203BA2EF00481331 /* ViewController.m in Sources */,
 				71EBB4AA203BA2EF00481331 /* main.m in Sources */,
+				71EBB4CE203BA32A00481331 /* CalculateTool.m in Sources */,
 				71EBB49C203BA2EF00481331 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +440,7 @@
 				DEVELOPMENT_TEAM = 6G6VWF999S;
 				INFOPLIST_FILE = "编程思想小结/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ray.------";
+				PRODUCT_BUNDLE_IDENTIFIER = ray.bianchengsixiang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,7 +454,7 @@
 				DEVELOPMENT_TEAM = 6G6VWF999S;
 				INFOPLIST_FILE = "编程思想小结/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ray.------";
+				PRODUCT_BUNDLE_IDENTIFIER = ray.bianchengsixiang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
